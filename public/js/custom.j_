@@ -161,7 +161,7 @@
 			$(this).next(".faq__two-collapse-item-card-header-content").addClass("active").slideDown()
 			$(this).children("i").removeClass("far fa-plus").addClass("far fa-minus")
 		}
-	});	
+	});
 	/*========== FAQ  ==========*/
 	$(".faq__two-collapse-item-card-header-two").click(function() {
 		if ($(this).next(".faq__two-collapse-item-card-header-two-content").hasClass("active")) {
@@ -173,7 +173,7 @@
 			$(this).next(".faq__two-collapse-item-card-header-two-content").addClass("active").slideDown()
 			$(this).children("i").removeClass("far fa-plus").addClass("far fa-minus")
 		}
-	});	
+	});
 	// /*==========  banner  ==========*/
 	let sliderActive1 = '.banner-slider';
 	let sliderInit1 = new Swiper(sliderActive1, {
@@ -365,7 +365,7 @@
         },
       });
         /*==========  isotop  ==========*/
-		$(window).on('load', function(){ 
+		$(window).on('load', function(){
 			 /*========== Project Grid  ==========*/
 			 var $grid = $('.portfolio__page-active').isotope({});
 			 /*========== Project Filter  ==========*/

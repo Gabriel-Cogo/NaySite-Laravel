@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
     <!-- Start Meta -->
     <meta charset="UTF-8">
@@ -8,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title of Site -->
     <title>Finaxio - HTML5 Template</title>
+
+    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.appear.js') }}"></script>
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
     <!-- Bootstrap CSS -->

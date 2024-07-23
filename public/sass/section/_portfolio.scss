@@ -7,6 +7,7 @@ Portfolio Css
     background-repeat: no-repeat;
     background-size: auto;
     padding-bottom: 80px;
+
     &::after {
         content: '';
         position: absolute;
@@ -17,99 +18,119 @@ Portfolio Css
         background: $primary-color;
         z-index: -2;
     }
-	&-button {
-		text-align: right;
-		padding-right: 23px;
-		&-next {			
+
+    &-button {
+        text-align: right;
+        padding-right: 23px;
+
+        &-next {
             display: inline-block;
             position: static;
             margin: 0;
             margin-left: 40px;
+
             &::after {
                 display: none;
             }
-			i {
-				&::before {
-					width: 50px;
-					height: 50px;
-					display: inline-block;
-					line-height: 50px;
-					text-align: center;
-					background: $secondary-color;
+
+            i {
+                &::before {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    line-height: 50px;
+                    text-align: center;
+                    background: $secondary-color;
                     font-size: 18px;
-					color: $white;
-					border-radius: 50%;
-					transition: all 0.4s ease-in-out;					
-				}
-			}
-			&:hover i::before {
-				background: $border6;
-				color: $white;
-			}  
-		}
-		&-prev {		
-			display: inline-block;
-			position: static;
+                    color: $white;
+                    border-radius: 50%;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+
+            &:hover i::before {
+                background: $border6;
+                color: $white;
+            }
+        }
+
+        &-prev {
+            display: inline-block;
+            position: static;
             margin: 0;
+
             &::after {
                 display: none;
             }
-			i {
-				&::before {
-					width: 50px;
-					height: 50px;
-					display: inline-block;
-					line-height: 50px;
-					text-align: center;
-					background: $secondary-color;
+
+            i {
+                &::before {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    line-height: 50px;
+                    text-align: center;
+                    background: $secondary-color;
                     font-size: 18px;
-					color: $white;
-					border-radius: 50%;
-					transition: all 0.4s ease-in-out; 
-				}
-			}
-			&:hover i::before {
-				background: $border6;
-				color: $white;
-			}  
-		}
-	}
+                    color: $white;
+                    border-radius: 50%;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+
+            &:hover i::before {
+                background: $border6;
+                color: $white;
+            }
+        }
+    }
+
     &-title {
         .subtitle-one {
             color: $white;
         }
+
         h2 {
             color: $white;
         }
     }
+
     &-item {
         position: relative;
         margin-bottom: 40px;
+
         &-content {
             padding: 30px;
             background: $white;
             box-shadow: 0 0 25px $shadow;
+
             p {
                 color: $primary-color;
                 font-size: 14px;
             }
-            h5  {
+
+            h5 {
                 font-size: 20px;
                 line-height: 30px;
-                a {    
-					transition: all 0.4s ease-in-out;	
+
+                a {
+                    transition: all 0.4s ease-in-out;
+
                     &:hover {
                         color: $primary-color;
-                    }                
+                    }
                 }
             }
         }
+
         &-info {
             position: absolute;
             top: 30px;
             left: 30px;
+
             a {
                 display: inline-block;
+
                 i {
                     background: $white;
                     width: 40px;
@@ -121,64 +142,79 @@ Portfolio Css
                 }
             }
         }
+
         img {
             width: 100%;
         }
     }
+
     .portfolio-slider {
         padding: 0 10px;
         margin: 0px -10px;
     }
 }
+
 /*==========================================================================
 Portfolio Two Css
 ========================================================================== */
 .portfolio__two {
     background: $thin-bg-2;
     overflow: hidden;
+
     &-item {
         &-content {
             background: $white;
             padding: 30px;
             margin: -60px 42px 0 0;
             position: relative;
+
             h4 {
                 transition: all .3s ease-out 0s;
             }
+
             p {
                 color: $primary-color-1;
                 transition: all .3s ease-out 0s;
             }
         }
+
         &.swiper-slide.swiper-slide-active .portfolio__two-item-content {
-                background: $heading-color;
-                h4 {
-                    color: $white;
-                }
-                p {
-                    color: $white;
-                }
-        } 
+            background: $heading-color;
+
+            h4 {
+                color: $white;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+
         img {
             width: 100%;
         }
     }
+
     &-right {
         text-align: right;
+
         .simple-btn {
             color: $primary-color-1;
         }
     }
+
     .portfolio-slider-two {
         margin-right: -390px;
     }
 }
+
 /*==========================================================================
 Portfolio Page Css
 ========================================================================== */
 .portfolio__page {
     &-btn {
         text-align: center;
+
         button {
             background: none;
             color: $heading-color;
@@ -186,18 +222,22 @@ Portfolio Page Css
             padding: 0 25px;
             line-height: 50px;
         }
+
         .active {
             background: $primary-color;
             color: $white;
         }
     }
+
     &-item {
         position: relative;
         overflow: hidden;
+
         img {
             transform: scale(1);
             transition: all 0.5s ease-out 0s;
         }
+
         &-content {
             position: absolute;
             padding: 30px;
@@ -209,6 +249,7 @@ Portfolio Page Css
             opacity: 0;
             z-index: -1;
             transform: translateX(-30%);
+
             p a {
                 color: $primary-color;
                 font-weight: 700;
@@ -216,10 +257,12 @@ Portfolio Page Css
                 margin-top: 5px;
             }
         }
+
         &:hover {
             img {
                 transform: scale(1.1);
             }
+
             .portfolio__page-item {
                 &-content {
                     opacity: 1;
@@ -230,6 +273,7 @@ Portfolio Page Css
         }
     }
 }
+
 /*==========================================================================
 Portfolio Details Css
 ========================================================================== */
@@ -241,23 +285,29 @@ Portfolio Details Css
         margin-bottom: -50px;
         position: relative;
         box-shadow: 0 0 70px $shadow;
+
         &-list {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             &-left {
                 display: flex;
+
                 &-item {
                     margin-right: 30px;
+
                     span {
                         font-size: 14px;
                         line-height: 24px;
                     }
+
                     &:last-child {
                         margin: 0;
                     }
                 }
             }
+
             &-right {
                 .theme-btn3 {
                     background: $primary-color;
@@ -265,13 +315,16 @@ Portfolio Details Css
             }
         }
     }
+
     &-content {
         &-box {
             padding: 40px;
             margin: 45px 0;
             background: $heading-color;
+
             &-left {
                 position: relative;
+
                 i {
                     display: inline-block;
                     width: 50px;
@@ -286,17 +339,21 @@ Portfolio Details Css
                     right: 0;
                     top: 0;
                 }
+
                 img {
                     border-radius: 50%;
                 }
             }
+
             &-right {
                 h4 {
                     color: $white;
                 }
+
                 h6 {
                     color: $white;
                     margin-top: 10px;
+
                     span {
                         color: $secondary-color;
                         font-weight: 400;
@@ -307,30 +364,36 @@ Portfolio Details Css
             }
         }
     }
+
     &-bottom {
         margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         &-item {
             background: $heading-color;
             width: 50%;
             padding: 10px 30px;
+
             h6 a {
                 color: $white;
                 display: block;
                 font-weight: 500;
             }
+
             h4 a {
                 color: $white;
                 display: block;
             }
+
             &.active {
                 background: $primary-color;
             }
         }
-    }   
+    }
 }
+
 @media (max-width: 1399px) {
     .portfolio__two {
         &-item {
@@ -340,21 +403,24 @@ Portfolio Details Css
         }
     }
 }
-@media (max-width: 1199px) {	
+
+@media (max-width: 1199px) {
     .portfolio__two {
         &-item {
             &-content {
                 h4 {
                     font-size: 20px;
                     line-height: 22px;
-                }                    
+                }
             }
         }
     }
+
     .portfolio__page {
         &-item {
             &-content {
                 right: 30px;
+
                 h4 {
                     font-size: 20px;
                     line-height: 30px;
@@ -363,18 +429,22 @@ Portfolio Details Css
         }
     }
 }
-@media (max-width: 991px) {	
+
+@media (max-width: 991px) {
     .portfolio__details {
         &-top {
             margin: 0 30px;
             margin-bottom: -70px;
+
             &-list {
                 display: block;
             }
         }
+
         &-content {
             &-box {
                 padding: 35px 30px;
+
                 &-right {
                     h4 {
                         font-size: 18px;
@@ -384,6 +454,7 @@ Portfolio Details Css
             }
         }
     }
+
     .portfolio__page {
         &-btn {
             button {
@@ -392,28 +463,34 @@ Portfolio Details Css
         }
     }
 }
+
 @media (max-width: 767px) {
-	.portfolio__area {
+    .portfolio__area {
         &-button {
             text-align: left;
             margin-top: 30px;
         }
     }
+
     .portfolio__two {
         &-right {
             text-align: left;
             margin-top: 20px;
         }
+
         .portfolio-slider-two {
             margin-right: 0;
         }
     }
+
     .portfolio__details {
         &-top {
             margin-bottom: -90px;
+
             &-list {
                 &-left {
                     display: block;
+
                     &-item {
                         margin-right: 0;
                         margin-bottom: 20px;
@@ -421,9 +498,11 @@ Portfolio Details Css
                 }
             }
         }
+
         &-content {
             &-box {
                 text-align: center;
+
                 &-right {
                     h4 {
                         font-weight: 500;
@@ -431,13 +510,16 @@ Portfolio Details Css
                 }
             }
         }
+
         &-bottom {
             display: block;
+
             &-item {
                 width: 100%;
             }
-        }  
+        }
     }
+
     .portfolio__page {
         &-btn {
             button {
@@ -447,6 +529,7 @@ Portfolio Details Css
         }
     }
 }
+
 @media (max-width: 359px) {
     .portfolio__two {
         &-item {
@@ -455,6 +538,7 @@ Portfolio Details Css
             }
         }
     }
+
     .portfolio__details {
         &-top {
             margin: 0 20px;
@@ -462,4 +546,3 @@ Portfolio Details Css
         }
     }
 }
-

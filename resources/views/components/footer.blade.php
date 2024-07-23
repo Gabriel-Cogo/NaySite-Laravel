@@ -1,14 +1,14 @@
-<div class="footer__top footer__top-page">
+<div class="footer__top">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  order-last order-lg-first">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 order-last order-lg-first">
                 <div class="footer__top-item">
                     <div class="footer__top-item-info">
                         <div class="footer__top-item-info-icon">
                             <i class="fal fa-phone-volume"></i>
                         </div>
                         <div class="footer__top-item-info-content">
-                            <span>Contact Us Free</span>
+                            <span>Contato Gratuito</span>
                             <h5><a href="tel:(+2)0109-1812-347">(+2) 0109-1812-347</a></h5>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                 <div class="footer__top-item t-right">
                     <div class="footer__top-item-info justify-content-end">
                         <div class="footer__top-item-info-content order-last order-lg-first">
-                            <span>Contact Us Free</span>
+                            <span>Contato Gratuito</span>
                             <h5><a href="mailto:info@webmail.com">info@webmail.com</a></h5>
                         </div>
                         <div class="footer__top-item-info-icon">
@@ -39,58 +39,53 @@
 </div>
 <!-- Footer Top End -->
 <!-- Footer Two Start -->
-<div class="footer__two-page" data-background="{{ asset('img/bg/footer-bg-2.png') }}">
+<div class="footer__two" data-background="{{ asset('img/bg/footer-bg-2.png') }}">
     <div class="container">
         <div class="row">
             <div class="col-xl-2 col-lg-6 col-md-5 col-sm-5 xl-mb-30">
-                <div class="footer__two-page-widget">
-                    <h5 class="mb-25">Main Links</h5>
-                    <div class="footer__two-page-widget-menu">
+                <div class="footer__two-widget">
+                    <h5 class="mb-25">Links Principais</h5>
+                    <div class="footer__two-widget-menu">
                         <ul>
-                            <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>Company</a></li>
-                            <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>Careers</a></li>
-                            <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>Press media</a>
-                            </li>
-                            <li><a href="{{ url('news-details') }}"><i class="far fa-angle-right"></i>Our
-                                    Blog</a></li>
-                            <li><a href="{{ url('faq') }}"><i class="far fa-angle-right"></i>Privacy
-                                    Policy</a></li>
-                            <li><a href="#"><i class="far fa-angle-right"></i>Pricing</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Empresa</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Carreiras</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Imprensa</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Nosso Blog</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Política de Privacidade</a></li>
+                            <li><a href="#"><i class="far fa-angle-right"></i>Preços</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-7 col-sm-7 sm-mb-30">
-                <div class="footer__two-page-widget">
-                    <h5 class="mb-25">Other Pages</h5>
+                <div class="footer__two-widget">
+                    <h5 class="mb-25">Outras Páginas</h5>
                     <div class="row">
                         <div class="col-6">
-                            <div class="footer__two-page-widget-menu">
+                            <div class="footer__two-widget-menu">
                                 <ul>
-                                    <li><a href="#"><i class="far fa-angle-right"></i>History</a></li>
-                                    <li><a href="{{ url('team') }}"><i class="far fa-angle-right"></i>Team</a>
-                                    </li>
-                                    <li><a href="#"><i class="far fa-angle-right"></i>Clients</a></li>
-                                    <li><a href="#"><i class="far fa-angle-right"></i>Testimonials</a></li>
-                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Get
-                                            Quote</a></li>
-                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Get In
-                                            Touch</a></li>
+                                    <li><a href="#"><i class="far fa-angle-right"></i>História</a></li>
+                                    <li><a href="{{ url('team') }}"><i class="far fa-angle-right"></i>Equipe</a></li>
+                                    <li><a href="#"><i class="far fa-angle-right"></i>Clientes</a></li>
+                                    <li><a href="#"><i class="far fa-angle-right"></i>Depoimentos</a></li>
+                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Obter
+                                            Cotação</a></li>
+                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Entrar em
+                                            Contato</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="footer__two-page-widget-menu">
+                            <div class="footer__two-widget-menu">
                                 <ul>
-                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Support</a>
+                                    <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>Suporte</a></li>
+                                    <li><a href="{{ url('news-standard') }}"><i
+                                                class="far fa-angle-right"></i>Notícias</a></li>
+                                    <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>Sobre Nós</a>
                                     </li>
-                                    <li><a href="{{ url('news-grid') }}"><i class="far fa-angle-right"></i>News</a>
+                                    <li><a href="{{ url('services') }}"><i class="far fa-angle-right"></i>Serviços</a>
                                     </li>
-                                    <li><a href="{{ url('about') }}"><i class="far fa-angle-right"></i>About
-                                            Us</a></li>
-                                    <li><a href="{{ url('services') }}"><i class="far fa-angle-right"></i>Services</a>
-                                    </li>
-                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Contact</a>
+                                    <li><a href="{{ url('contact') }}"><i class="far fa-angle-right"></i>Contato</a>
                                     </li>
                                 </ul>
                             </div>
@@ -99,59 +94,54 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 md-mb-30">
-                <div class="footer__two-page-widget">
-                    <h5 class="mb-25">Connect with us</h5>
-                    <div class="footer__two-page-widget-contact">
-                        <p>Subscribe to out newsletter today to receive updates on the latest news, releases and
-                            special offers. We respect your privacy. Your information is safe.</p>
-                        <div class="footer__two-page-widget-contact-subscribe">
+                <div class="footer__two-widget">
+                    <h5 class="mb-25">Conecte-se Conosco</h5>
+                    <div class="footer__two-widget-contact">
+                        <p>Assine nossa newsletter hoje para receber atualizações sobre as últimas notícias, lançamentos
+                            e ofertas especiais. Respeitamos sua privacidade. Suas informações estão seguras.</p>
+                        <div class="footer__two-widget-contact-subscribe">
                             <i class="far fa-envelope"></i>
                             <form action="#">
-                                <input type="text" name="email" placeholder="Email Address" required="">
-                                <button type="submit">Subscribe</button>
+                                <input type="text" name="email" placeholder="Endereço de Email" required="">
+                                <button type="submit">Assinar</button>
                             </form>
                         </div>
-                        <div class="footer__two-page-widget-contact-social">
-                            <h6>Social Network:</h6>
+                        <div class="footer__two-widget-contact-social">
+                            <h6>Redes Sociais:</h6>
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="footer__two-page-widget">
-                    <h5 class="mb-25">News & Feeds</h5>
-                    <div class="footer__two-page-widget-post">
-                        <div class="footer__two-page-widget-post-item">
-                            <div class="footer__two-page-widget-post-item-image">
-                                <a href="{{ url('case-details') }}"><img src="{{ asset('img/blog/post-3.jpg') }}"
+                <div class="footer__two-widget">
+                    <h5 class="mb-25">Notícias & Feeds</h5>
+                    <div class="footer__two-widget-post">
+                        <div class="footer__two-widget-post-item">
+                            <div class="footer__two-widget-post-item-image">
+                                <a href="{{ url('news-details') }}"><img src="{{ asset('img/blog/post-3.jpg') }}"
                                         alt=""></a>
                             </div>
-                            <div class="footer__two-page-widget-post-item-content">
-                                <span>June 12, 2022</span>
-                                <h6><a href="{{ url('news-details') }}">Amazon walmart or genz motors zone
-                                        fire</a></h6>
+                            <div class="footer__two-widget-post-item-content">
+                                <span>12 de Junho de 2022</span>
+                                <h6><a href="{{ url('news-details') }}">Amazon Walmart ou Genz Motors Zone Fire</a>
+                                </h6>
                             </div>
                         </div>
-                        <div class="footer__two-page-widget-post-item">
-                            <div class="footer__two-page-widget-post-item-image">
-                                <a href="{{ url('case-details') }}"><img src="{{ asset('img/blog/post-4.jpg') }}"
+                        <div class="footer__two-widget-post-item">
+                            <div class="footer__two-widget-post-item-image">
+                                <a href="{{ url('news-details') }}"><img src="{{ asset('img/blog/post-4.jpg') }}"
                                         alt=""></a>
                             </div>
-                            <div class="footer__two-page-widget-post-item-content">
-                                <span>June 09, 2022</span>
-                                <h6><a href="{{ url('news-details') }}">The most successful businesses</a></h6>
+                            <div class="footer__two-widget-post-item-content">
+                                <span>09 de Junho de 2022</span>
+                                <h6><a href="{{ url('news-details') }}">Os negócios mais bem-sucedidos</a></h6>
                             </div>
                         </div>
                     </div>
@@ -173,8 +163,8 @@
             </div>
             <div class="col-xl-5 col-lg-5">
                 <div class="copyright__two-menu">
-                    <a href="{{ url('faq') }}">FAQ</a>
-                    <a href="{{ url('about') }}">Terms & Conditions</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Termos & Condições</a>
                 </div>
             </div>
         </div>
@@ -182,7 +172,7 @@
 </div>
 <!-- Copyright Area End -->
 <!-- Scroll Btn Start -->
-<div class="scroll-up">
+<div class="scroll-up scroll-two">
     <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>

@@ -3,17 +3,20 @@ All Side Bar
 ========================================================================== */
 .all__sidebar {
     margin-top: -70px;
+
     &-item {
         padding: 40px;
         box-shadow: 0 0 70px $shadow;
         margin-bottom: 30px;
         background: $white;
+
         h5 {
             position: relative;
             font-size: 20px;
             line-height: 30px;
             padding-bottom: 15px;
             margin-bottom: 30px;
+
             &::before {
                 position: absolute;
                 content: '';
@@ -24,6 +27,7 @@ All Side Bar
                 width: 100%;
                 background: $border1;
             }
+
             &::after {
                 position: absolute;
                 content: '';
@@ -35,10 +39,12 @@ All Side Bar
                 background: $primary-color;
             }
         }
+
         &-category {
             ul {
                 li {
                     list-style: none;
+
                     a {
                         display: block;
                         color: $heading-color;
@@ -47,15 +53,18 @@ All Side Bar
                         padding-bottom: 15px;
                         margin-bottom: 15px;
                         border-bottom: 1px solid $border1;
+
                         span {
                             float: right;
                             position: relative;
                             top: 2px;
                         }
+
                         &:hover {
                             color: $primary-color;
                         }
                     }
+
                     &:last-child a {
                         margin: 0;
                         padding: 0;
@@ -64,10 +73,12 @@ All Side Bar
                 }
             }
         }
+
         &-materials {
             ul {
                 li {
                     list-style: none;
+
                     a {
                         display: block;
                         color: $heading-color;
@@ -76,11 +87,13 @@ All Side Bar
                         margin-bottom: 10px;
                         border: 1px solid $border1;
                         line-height: 58px;
+
                         span {
                             float: right;
                             color: $body-color;
                             line-height: 60px;
                         }
+
                         i {
                             font-size: 22px;
                             color: $primary-color;
@@ -89,15 +102,18 @@ All Side Bar
                             position: relative;
                         }
                     }
+
                     &:last-child a {
                         margin: 0;
                     }
                 }
-            }            
+            }
         }
+
         &-search {
             form {
                 position: relative;
+
                 button {
                     position: absolute;
                     right: 0;
@@ -110,40 +126,49 @@ All Side Bar
                 }
             }
         }
+
         &-about {
             text-align: center;
+
             img {
                 border-radius: 50%;
             }
+
             h6 {
                 font-size: 18px;
                 line-height: 28px;
                 margin-top: 15px;
                 margin-bottom: 10px;
             }
+
             p {
                 max-width: 280px;
                 margin: 0 auto;
-                margin-bottom: 20px;                
+                margin-bottom: 20px;
             }
+
             ul {
                 li {
                     display: inline-block;
                     list-style: none;
                     margin-right: 15px;
+
                     a i {
                         font-size: 14px;
                         transition: all 0.3s ease-out 0s;
+
                         &:hover {
                             color: $primary-color;
                         }
                     }
+
                     &:last-child {
                         margin: 0;
                     }
                 }
             }
         }
+
         &-post {
             &-item {
                 display: flex;
@@ -151,30 +176,37 @@ All Side Bar
                 padding-bottom: 20px;
                 margin-bottom: 20px;
                 border-bottom: 1px solid $border1;
+
                 &-image {
                     img {
                         max-width: 80px;
                     }
                 }
+
                 &-content {
                     margin-left: 20px;
+
                     span {
                         font-size: 14px;
                         line-height: 24px;
+
                         i {
                             color: $heading-color;
                             margin-right: 10px;
                         }
                     }
+
                     h6 a {
                         transition: all 0.4s ease-out 0s;
                         max-width: 210px;
                         display: inline-block;
+
                         &:hover {
                             color: $primary-color;
-                        }                        
+                        }
                     }
                 }
+
                 &:last-child {
                     margin: 0;
                     padding: 0;
@@ -182,11 +214,13 @@ All Side Bar
                 }
             }
         }
+
         &-tag {
             ul {
                 li {
                     display: inline-block;
                     list-style: none;
+
                     a {
                         display: inline-block;
                         font-size: 12px;
@@ -196,6 +230,7 @@ All Side Bar
                         background: $thin-bg;
                         transition: all 0.4s ease-out 0s;
                         margin: 5px 2px;
+
                         &:hover {
                             background: $primary-color;
                             color: $white;
@@ -204,11 +239,13 @@ All Side Bar
                 }
             }
         }
+
         &:last-child {
             margin: 0;
         }
     }
 }
+
 @media (max-width: 1399px) {
     .all__sidebar {
         &-item {
@@ -216,30 +253,36 @@ All Side Bar
         }
     }
 }
+
 @media (max-width: 1199px) {
     .all__sidebar {
         margin-left: 0;
+
         &-item {
             padding: 35px 25px;
+
             &-materials {
                 ul {
                     li {
                         a {
                             padding: 0 20px;
+
                             i {
                                 font-size: 18px;
                             }
                         }
                     }
-                }            
+                }
             }
+
             &-post {
                 &-item {
                     &-content {
                         margin-left: 15px;
-                        h6 {   
+
+                        h6 {
                             font-size: 14px;
-                            line-height: 24px;                   
+                            line-height: 24px;
                         }
                     }
                 }
@@ -247,6 +290,7 @@ All Side Bar
         }
     }
 }
+
 @media (max-width: 991px) {
     .all__sidebar {
         margin: 0;

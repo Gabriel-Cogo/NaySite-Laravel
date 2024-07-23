@@ -3,7 +3,8 @@ Services
 ========================================================================== */
 .services__area {
     position: relative;
-    z-index: 1;    
+    z-index: 1;
+
     &::after {
         content: '';
         position: absolute;
@@ -16,11 +17,13 @@ Services
         background: $thin-bg;
         z-index: -2;
     }
+
     &-title {
         max-width: 1000px;
         margin: 0 auto;
         text-align: center;
     }
+
     &-item {
         padding: 60px;
         box-shadow: 0 0 70px $shadow;
@@ -28,6 +31,7 @@ Services
         transition: all 0.4s ease-out 0s;
         position: relative;
         z-index: 1;
+
         &::after {
             content: '';
             position: absolute;
@@ -39,8 +43,10 @@ Services
             background: $heading-color;
             z-index: -1;
         }
+
         &-icon {
             position: relative;
+
             &-one {
                 position: absolute;
                 top: 0;
@@ -48,13 +54,15 @@ Services
                 transform: translateX(-50%);
                 opacity: 0;
                 transition: all 0.4s ease-out 0s;
-                z-index: 1;             
+                z-index: 1;
             }
         }
+
         &-content {
             position: relative;
             padding-top: 23px;
             margin-top: 38px;
+
             &::after {
                 content: '';
                 position: absolute;
@@ -66,6 +74,7 @@ Services
                 height: 1px;
                 background: $border1;
             }
+
             h3 {
                 a {
                     transition: all 0.4s ease-out 0s;
@@ -74,22 +83,27 @@ Services
                 }
             }
         }
+
         &:hover {
             &::after {
                 height: 100%;
             }
+
             h3 a {
                 color: $white;
             }
+
             .simple-btn {
                 color: $white;
             }
+
             .services__area-item {
                 &-icon {
                     &-one {
                         opacity: 1;
                     }
                 }
+
                 &-content {
                     &::after {
                         width: 140px;
@@ -99,26 +113,33 @@ Services
             }
         }
     }
+
     &-page {
         background: $thin-bg;
+
         &-skill {
             &-left {
                 margin-right: 110px;
+
                 &-title {
                     h2 {
                         margin-bottom: 10px;
                     }
+
                     p {
                         font-size: 18px;
                         line-height: 28px;
                     }
                 }
+
                 &-item {
                     &-skill {
                         margin-top: 25px;
+
                         &-content {
                             position: relative;
                         }
+
                         &-count {
                             position: absolute;
                             top: 0;
@@ -128,13 +149,15 @@ Services
                             line-height: 28px;
                             font-weight: 700;
                         }
+
                         &-inner {
                             width: 100%;
-                            height:20px;
+                            height: 20px;
                             margin-top: 15px;
                             position: relative;
                             border: 1px solid $border1;
                         }
+
                         &-bar {
                             height: 6px;
                             position: absolute;
@@ -145,11 +168,13 @@ Services
                             transition: all 3.5s ease-out 0s;
                         }
                     }
-                } 
+                }
             }
+
             &-right {
                 &-image {
                     position: relative;
+
                     &-video-icon {
                         position: absolute;
                         background: $white;
@@ -164,6 +189,7 @@ Services
                         border-radius: 50%;
                         transform: translateY(-50%);
                         box-shadow: 0 0 50px $shadow;
+
                         a {
                             position: relative;
                             color: $heading-color;
@@ -173,17 +199,19 @@ Services
                             width: 100px;
                             height: 100px;
                             display: block;
-                        }            
+                        }
                     }
                 }
             }
         }
     }
 }
+
 .appointment {
     position: relative;
     z-index: 1;
-    padding: 40px 0;    
+    padding: 40px 0;
+
     &::after {
         content: '';
         position: absolute;
@@ -196,6 +224,7 @@ Services
         background: $secondary-color;
         z-index: -2;
     }
+
     &-left {
         h3 {
             font-size: 30px;
@@ -203,13 +232,16 @@ Services
             line-height: 40px;
         }
     }
+
     &-right {
         text-align: right;
+
         .simple-btn {
             color: $white;
         }
     }
 }
+
 /*==========================================================================
 Services Two
 ========================================================================== */
@@ -220,6 +252,7 @@ Services Two
     position: relative;
     z-index: 1;
     padding: 110px 0;
+
     &::before {
         content: '';
         position: absolute;
@@ -230,7 +263,8 @@ Services Two
         background: $primary-color-1;
         z-index: -1;
         opacity: 90%;
-    }    
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -241,21 +275,26 @@ Services Two
         background: $thin-bg-2;
         z-index: -1;
     }
+
     &-title {
         text-align: center;
+
         h2 {
             color: $white;
         }
+
         .subtitle-page-two-center {
             color: $white;
         }
     }
+
     &-item {
         &-area {
             background: $white;
             text-align: center;
             transition: all 0.4s ease-out 0s;
             padding: 60px;
+
             &-icon {
                 width: 120px;
                 height: 120px;
@@ -267,6 +306,7 @@ Services Two
                 position: relative;
                 z-index: 1;
                 margin-bottom: 30px;
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -281,16 +321,19 @@ Services Two
                     transition: all 0.4s ease-out 0s;
                     z-index: -1;
                 }
+
                 img {
                     max-width: 50px;
                 }
             }
+
             &-content {
                 h4 {
                     margin-bottom: 20px;
                 }
             }
         }
+
         a {
             display: block;
             background: $primary-color-1;
@@ -307,38 +350,46 @@ Services Two
             line-height: 60px;
             opacity: 0;
             border-radius: 0 0 5px 5px;
+
             i {
                 font-size: 12px;
                 margin-left: 10px;
-            }            
+            }
         }
+
         &.swiper-slide.swiper-slide-active.services__two-item {
             a {
                 opacity: 1;
             }
+
             .services__two-item-area {
                 background: $thin-bg;
+
                 &-icon {
                     border: 1px solid $thin-bg;
+
                     &::after {
                         width: 100%;
                         height: 100%;
                     }
                 }
-            } 
-        } 
+            }
+        }
     }
-	&-button {
+
+    &-button {
         position: absolute;
         top: 50%;
         left: 0;
-        width: 100%;        
-		&-prev {			
+        width: 100%;
+
+        &-prev {
             display: inline-block;
             margin: 0;
             left: 210px;
-            position: absolute; 
-			i {
+            position: absolute;
+
+            i {
                 width: 50px;
                 height: 50px;
                 display: inline-block;
@@ -348,20 +399,23 @@ Services Two
                 font-size: 18px;
                 color: $white;
                 border-radius: 5px;
-                transition: all 0.4s ease-in-out;	
-			}
-			&:hover i {
-				background: $white;
-				color: $primary-color-1;
-			}  
-		}
-		&-next {		
-			display: inline-block;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &:hover i {
+                background: $white;
+                color: $primary-color-1;
+            }
+        }
+
+        &-next {
+            display: inline-block;
             margin: 0;
             left: auto;
             right: 210px;
-            position: absolute;            
-			i {
+            position: absolute;
+
+            i {
                 width: 50px;
                 height: 50px;
                 display: inline-block;
@@ -371,24 +425,28 @@ Services Two
                 font-size: 18px;
                 color: $white;
                 border-radius: 5px;
-                transition: all 0.4s ease-in-out;	
-			}
-			&:hover i {
-				background: $white;
-				color: $primary-color-1;
-			}  
-		}
-	}
+                transition: all 0.4s ease-in-out;
+            }
+
+            &:hover i {
+                background: $white;
+                color: $primary-color-1;
+            }
+        }
+    }
+
     &-appointment {
         text-align: center;
         max-width: 650px;
         margin: 0 auto;
+
         h5 a {
             color: $primary-color-1;
             font-size: 14px;
         }
-    } 
+    }
 }
+
 /*==========================================================================
 Services Details
 ========================================================================== */
@@ -397,14 +455,17 @@ Services Details
         &-content {
             &-list {
                 margin: 35px 0;
+
                 &-item {
                     background: $white;
                     border: 1px solid $border1;
                     box-shadow: 0 0 70px $shadow;
                     transition: all 0.4s ease-out 0s;
                     padding: 22px 30px;
+
                     &-icon {
                         position: relative;
+
                         &-one {
                             position: absolute;
                             top: 0;
@@ -413,12 +474,14 @@ Services Details
                             opacity: 0;
                             width: 100%;
                             transition: all 0.4s ease-out 0s;
-                            z-index: 1;             
+                            z-index: 1;
                         }
                     }
+
                     &-content {
                         h6 {
                             transition: all 0.4s ease-out 0s;
+
                             i {
                                 float: right;
                                 margin-top: -7px;
@@ -427,22 +490,26 @@ Services Details
                             }
                         }
                     }
+
                     &:hover {
                         background: $heading-color;
+
                         .service__details-left-content-list-item {
                             &-icon {
                                 &-one {
-                                    opacity: 1;            
+                                    opacity: 1;
                                 }
                             }
+
                             &-content {
                                 h6 {
                                     color: $white;
+
                                     i {
                                         color: $secondary-color;
                                     }
                                 }
-                            }                            
+                            }
                         }
                     }
                 }
@@ -450,45 +517,53 @@ Services Details
         }
     }
 }
+
 @media (max-width: 1850px) {
-    .services__two {        
-        &-button {      
+    .services__two {
+        &-button {
             &-prev {
-                left: 100px;  
+                left: 100px;
             }
+
             &-next {
                 right: 100px;
             }
         }
     }
 }
+
 @media (max-width: 1600px) {
-	.services__area { 
+    .services__area {
         &::after {
             width: 100%;
         }
     }
-    .appointment {  
+
+    .appointment {
         &::after {
             width: 100%;
         }
     }
-    .services__two {        
-        &-button {      
+
+    .services__two {
+        &-button {
             &-prev {
-                left: 10px;  
+                left: 10px;
             }
+
             &-next {
                 right: 10px;
             }
         }
     }
 }
+
 @media (max-width: 1399px) {
-	.services__area {
+    .services__area {
         &-item {
             padding: 60px 35px;
         }
+
         &-page {
             &-skill {
                 &-left {
@@ -496,15 +571,17 @@ Services Details
                 }
             }
         }
-    }    
+    }
+
     .appointment {
         &-left {
             h3 {
                 font-size: 24px;
                 line-height: 34px;
             }
-        }        
+        }
     }
+
     .service__details {
         &-left {
             &-content {
@@ -517,19 +594,22 @@ Services Details
         }
     }
 }
+
 @media (max-width: 1199px) {
-	.services__area {
+    .services__area {
         &-title {
             max-width: 800px;
         }
+
         &-item {
             &-content {
                 h3 {
                     font-size: 22px;
-                    line-height: 32px;                    
+                    line-height: 32px;
                 }
             }
         }
+
         &-page {
             &-skill {
                 &-left {
@@ -538,14 +618,16 @@ Services Details
             }
         }
     }
+
     .appointment {
         &-left {
             h3 {
                 font-size: 20px;
                 line-height: 30px;
             }
-        }        
+        }
     }
+
     .service__details {
         &-left {
             &-content {
@@ -563,37 +645,43 @@ Services Details
         }
     }
 }
+
 @media (max-width: 991px) {
-    .services__area {        
+    .services__area {
         &-page {
             &-skill {
                 &-left {
                     margin-right: 0;
                 }
+
                 &-right {
                     &-image {
                         img {
                             width: 100%;
                         }
+
                         &-video-icon {
                             top: 50%;
                             left: 50%;
-                            transform: translate(-50%, -50%);           
+                            transform: translate(-50%, -50%);
                         }
                     }
                 }
             }
         }
     }
+
     .appointment {
         &-left {
             text-align: center;
             margin-bottom: 10px;
-        }        
+        }
+
         &-right {
             text-align: center;
-        }        
+        }
     }
+
     .service__details {
         &-left {
             &-content {
@@ -611,18 +699,21 @@ Services Details
         }
     }
 }
+
 @media (max-width: 650px) {
-    .services__two {        
+    .services__two {
         &-button {
             display: none;
         }
     }
 }
+
 @media (max-width: 494px) {
-    .services__two {  
+    .services__two {
         &::after {
             height: 300px;
         }
+
         &-item {
             &-area {
                 padding: 50px 30px;
@@ -630,8 +721,9 @@ Services Details
         }
     }
 }
+
 @media (max-width: 330px) {
-    .services__two {  
+    .services__two {
         &::after {
             height: 328px;
         }

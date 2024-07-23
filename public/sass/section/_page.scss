@@ -9,6 +9,7 @@ Page Banner
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &::after {
         content: '';
         position: absolute;
@@ -20,6 +21,7 @@ Page Banner
         border-radius: 0 0 150px 0;
         z-index: -2;
     }
+
     &-content {
         ul {
             li {
@@ -27,27 +29,32 @@ Page Banner
                 list-style: none;
                 color: $secondary-color;
                 font-weight: 700;
+
                 a {
                     color: $border8;
                     margin-right: 15px;
                 }
+
                 span {
-                    margin-right: 15px;   
-                    color: $border8;                 
+                    margin-right: 15px;
+                    color: $border8;
                 }
             }
         }
+
         h2 {
             color: $white;
             font-size: 80px;
             line-height: 90px;
             margin-top: 10px;
         }
+
         .subtitle-two {
             color: $white;
         }
     }
 }
+
 /*==========================================================================
 Error
 ========================================================================== */
@@ -57,13 +64,16 @@ Error
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &-title {
         text-align: center;
+
         h1 {
             font-size: 300px;
             line-height: 285px;
             color: $white;
         }
+
         h3 {
             font-size: 30px;
             line-height: 40px;
@@ -71,6 +81,7 @@ Error
             color: $white;
             font-weight: 400;
         }
+
         .theme-banner-btn {
             i::before {
                 font-size: 16px;
@@ -80,10 +91,12 @@ Error
         }
     }
 }
+
 @media (max-width: 1399px) {
     .error__area {
         padding-top: 195px;
         padding-bottom: 88px;
+
         &-title {
             h1 {
                 font-size: 200px;
@@ -92,6 +105,7 @@ Error
         }
     }
 }
+
 @media (max-width: 1199px) {
     .page__banner {
         &::after {
@@ -99,6 +113,7 @@ Error
         }
     }
 }
+
 @media (max-width: 991px) {
     .page__banner {
         &::after {
@@ -106,13 +121,16 @@ Error
         }
     }
 }
+
 @media (max-width: 768px) {
     .page__banner {
         padding-top: 290px;
+
         &::after {
             width: 100%;
             border-radius: 0;
         }
+
         &-content {
             h2 {
                 font-size: 56px;
@@ -120,9 +138,11 @@ Error
             }
         }
     }
+
     .error__area {
         padding-top: 240px;
         padding-bottom: 120px;
+
         &-title {
             h1 {
                 font-size: 170px;
@@ -131,6 +151,7 @@ Error
         }
     }
 }
+
 @media (max-width: 440px) {
     .page__banner {
         &-content {
@@ -140,6 +161,7 @@ Error
             }
         }
     }
+
     .error__area {
         &-title {
             h1 {
@@ -149,9 +171,11 @@ Error
         }
     }
 }
+
 @media (max-width: 359px) {
     .page__banner {
         padding-top: 320px;
+
         &-content {
             h2 {
                 font-size: 38px;
@@ -159,8 +183,10 @@ Error
             }
         }
     }
+
     .error__area {
         padding-top: 250px;
+
         &-title {
             h1 {
                 font-size: 130px;

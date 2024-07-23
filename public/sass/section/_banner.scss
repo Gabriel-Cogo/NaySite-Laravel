@@ -2,14 +2,16 @@
 Banner
 ========================================================================== */
 .banner__area {
-    position: relative;  
+    position: relative;
     z-index: 1;
+
     &-image {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         z-index: 1;
+
         &::after {
             content: '';
             position: absolute;
@@ -22,6 +24,7 @@ Banner
             z-index: -1;
         }
     }
+
     &-content {
         position: relative;
         z-index: 9;
@@ -29,16 +32,19 @@ Banner
         padding-bottom: 220px;
         padding-top: 350px;
         max-width: 740px;
+
         span {
             display: inline-block;
             color: $white;
             text-transform: capitalize;
             margin-bottom: 10px;
         }
+
         h1 {
             color: $white;
             margin-bottom: 15px;
         }
+
         p {
             color: $white;
             max-width: 640px;
@@ -46,31 +52,38 @@ Banner
             font-size: 18px;
             line-height: 28px;
         }
+
         &-button {
             display: flex;
+
             &-item {
                 margin-right: 30px;
+
                 &:last-child {
                     margin: 0;
                 }
             }
         }
+
         &-icon {
             position: absolute;
             bottom: 160px;
             right: 140px;
             z-index: -1;
+
             img {
                 max-width: 260px;
             }
         }
     }
+
     &-dots {
         position: absolute;
         top: 50%;
         left: 100px;
         transform: translateY(-50%);
         z-index: 1;
+
         .banner-pagination {
             .swiper-pagination-bullet {
                 border-radius: 3px;
@@ -82,14 +95,16 @@ Banner
                 display: block;
                 margin: 0;
                 margin-bottom: 10px;
+
                 &-active {
                     height: 26px;
-                background: $secondary-color;
+                    background: $secondary-color;
                 }
             }
         }
     }
 }
+
 /*==========================================================================
 Banner Two
 ========================================================================== */
@@ -97,9 +112,11 @@ Banner Two
     position: relative;
     z-index: 1;
 }
+
 .banner__two {
     &-area {
         overflow: hidden;
+
         &-image {
             position: absolute;
             left: 0;
@@ -115,12 +132,14 @@ Banner Two
             transition: all 10s ease-out 0s;
         }
     }
+
     &-content {
         position: relative;
         z-index: 9;
         text-align: left;
         padding-top: 20px;
         max-width: 740px;
+
         span {
             display: inline-block;
             color: $primary-color-1;
@@ -128,9 +147,11 @@ Banner Two
             margin-bottom: 10px;
             font-weight: 700;
         }
+
         h1 {
             margin-bottom: 25px;
         }
+
         p {
             max-width: 640px;
             margin-bottom: 45px;
@@ -138,20 +159,24 @@ Banner Two
             line-height: 28px;
         }
     }
+
     &-right {
         padding-top: 160px;
         text-align: right;
         position: relative;
     }
+
     &-thumb {
         position: absolute;
         width: 100%;
         bottom: 50px;
+
         &-item {
             margin-right: 20px;
             border-top: 3px solid $border2;
             padding-top: 15px;
             cursor: pointer;
+
             h6 {
                 span {
                     color: $primary-color-1;
@@ -161,18 +186,23 @@ Banner Two
         }
     }
 }
+
 .swiper-button-prev::after {
     display: none;
 }
+
 .swiper-button-next::after {
     display: none;
 }
+
 .swiper-slide-active .banner__two-area-image {
     transform: scale(1.12);
 }
+
 .banner__two-thumb-item.swiper-slide-thumb-active {
     border-top: 3px solid $primary-color-1;
 }
+
 @media (max-width: 1580px) {
     .banner__area {
         &-dots {
@@ -180,23 +210,27 @@ Banner Two
         }
     }
 }
+
 @media (max-width: 1399px) {
     .banner__area {
         &-content {
             padding-bottom: 170px;
             padding-top: 300px;
         }
+
         &-image {
             &::after {
                 width: 65%;
             }
         }
+
         &-dots {
             left: 50px;
             display: block;
         }
     }
 }
+
 @media (max-width: 1280px) {
     .banner__area {
         &-dots {
@@ -204,6 +238,7 @@ Banner Two
         }
     }
 }
+
 @media (max-width: 1199px) {
     .banner__area {
         &-image {
@@ -211,13 +246,16 @@ Banner Two
                 width: 75%;
             }
         }
+
         &-dots {
             display: block;
         }
     }
+
     .banner__two {
         &-area {
             overflow: hidden;
+
             &-image {
                 position: absolute;
                 left: 0;
@@ -233,18 +271,22 @@ Banner Two
                 transition: all 28s ease-out 0s;
             }
         }
+
         &-content {
             padding: 270px 0;
+
             h1 {
                 font-size: 60px;
                 line-height: 70px;
             }
         }
+
         &-right {
             top: 61px;
         }
     }
 }
+
 @media (max-width: 1080px) {
     .banner__area {
         &-dots {
@@ -252,6 +294,7 @@ Banner Two
         }
     }
 }
+
 @media (max-width: 991px) {
     .banner__area {
         &-image {
@@ -260,6 +303,7 @@ Banner Two
             }
         }
     }
+
     .banner__two {
         &-content {
             padding: 0;
@@ -267,18 +311,22 @@ Banner Two
             margin-bottom: 190px;
             text-align: center;
         }
+
         &-right {
             text-align: center;
             top: 0;
             padding-top: 200px;
         }
+
         &-thumb {
             position: absolute;
             width: 100%;
             bottom: 50px;
+
             &-item {
                 margin-right: 0;
                 padding-top: 10px;
+
                 h6 {
                     span {
                         color: $primary-color-1;
@@ -289,6 +337,7 @@ Banner Two
         }
     }
 }
+
 @media (max-width: 767px) {
     .banner__area {
         &-image {
@@ -296,18 +345,22 @@ Banner Two
                 border-radius: 0;
             }
         }
+
         &-content {
             text-align: center;
+
             h1 {
                 font-size: 60px;
                 line-height: 70px;
             }
+
             &-button {
                 justify-content: center;
             }
         }
     }
 }
+
 @media (max-width: 575px) {
     .banner__area {
         &-content {
@@ -317,41 +370,48 @@ Banner Two
             }
         }
     }
-    .banner__two {        
+
+    .banner__two {
         &-content {
             h1 {
                 font-size: 50px;
-                line-height: 60px;               
+                line-height: 60px;
             }
         }
     }
 }
+
 @media (max-width: 485px) {
-    .banner__two {        
+    .banner__two {
         &-content {
             h1 {
                 font-size: 48px;
-                line-height: 58px;                
+                line-height: 58px;
             }
         }
     }
 }
+
 @media (max-width: 450px) {
     .banner__area {
         &-content {
             padding-bottom: 170px;
             padding-top: 320px;
+
             h1 {
                 font-size: 42px;
-                line-height: 52px;   
+                line-height: 52px;
             }
+
             p {
                 margin-bottom: 35px;
                 font-size: 16px;
                 line-height: 26px;
             }
+
             &-button {
                 display: inline-block;
+
                 &-item {
                     margin-right: 0;
                     margin-bottom: 30px;
@@ -359,55 +419,62 @@ Banner Two
             }
         }
     }
-    .banner__two {        
+
+    .banner__two {
         &-content {
             h1 {
                 font-size: 42px;
-                line-height: 52px;                
+                line-height: 52px;
             }
+
             p {
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 30px;
             }
         }
+
         &-right {
             padding-top: 230px;
         }
     }
 }
+
 @media (max-width: 385px) {
     .banner__area {
         &-content {
             h1 {
                 font-size: 38px;
-                line-height: 48px;   
+                line-height: 48px;
             }
         }
     }
-    .banner__two {        
+
+    .banner__two {
         &-content {
             h1 {
                 font-size: 38px;
-                line-height: 48px;                
+                line-height: 48px;
             }
         }
     }
 }
+
 @media (max-width: 359px) {
-    .banner__area {        
+    .banner__area {
         &-content {
             h1 {
                 font-size: 34px;
-                line-height: 44px;                
+                line-height: 44px;
             }
         }
     }
-    .banner__two {        
+
+    .banner__two {
         &-content {
             h1 {
                 font-size: 34px;
-                line-height: 44px;                
+                line-height: 44px;
             }
         }
     }

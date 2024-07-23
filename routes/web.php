@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // Define as rotas para as views
 Route::get('/', function () {
-    return view('index-2');
+    return view('index');
 });
 
 Route::get('/about', function () {

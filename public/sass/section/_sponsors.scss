@@ -5,22 +5,28 @@ Sponsors
     &-title {
         text-align: center;
     }
+
     &-brand {
         text-align: center;
+
         img {
             width: auto;
         }
+
         :first-child {
             text-align: right;
         }
     }
+
     &-box {
         margin-bottom: 120px;
         padding-bottom: 45px;
         border-bottom: 1px solid $border1;
     }
+
     &-item {
         text-align: center;
+
         &-icon {
             width: 150px;
             height: 150px;
@@ -32,6 +38,7 @@ Sponsors
             position: relative;
             z-index: 1;
             margin-bottom: 30px;
+
             &::after {
                 content: '';
                 position: absolute;
@@ -46,9 +53,11 @@ Sponsors
                 transition: all 0.4s ease-out 0s;
                 z-index: -1;
             }
+
             img {
                 max-width: 60px;
             }
+
             span {
                 color: $white;
                 background: $primary-color;
@@ -64,6 +73,7 @@ Sponsors
                 font-weight: 700;
             }
         }
+
         &:hover {
             .sponsors__area-item-icon::after {
                 width: 100%;
